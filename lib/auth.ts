@@ -97,10 +97,10 @@ export const defaultUsers: User[] = [
   {
     id: '1',
     email: 'admin@pampapro.com',
-    nombre: 'Carlos',
-    apellido: 'Administrador',
+    nombre:'Romina' ,
+    apellido: 'Administradora',
     rol: 'admin',
-    telefono: '+54 11 1234-5678',
+    telefono: '+54 2954 446198',
     createdAt: new Date().toISOString(),
     verificado: true,
     facial_verificado: true
@@ -129,7 +129,7 @@ export const defaultUsers: User[] = [
 ];
 
 export const defaultServices: Service[] = [
-  // ... (mantener tus servicios actuales)
+  // ... (mantener servicios actuales)
 ];
 
 // ========== FUNCIONES HÍBRIDAS ==========
@@ -385,7 +385,7 @@ export function updateSolicitudLocal(id: string, updates: Partial<Solicitud>) {
 
 /**
  * Obtener servicios - Decide según USE_BACKEND
- */
+ 
 export async function getServices(): Promise<Service[]> {
   if (USE_BACKEND) {
     try {
@@ -405,7 +405,7 @@ export async function getServices(): Promise<Service[]> {
 
 /**
  * Agregar servicio - Decide según USE_BACKEND
- */
+ 
 export async function addService(service: Omit<Service, 'id'>): Promise<Service> {
   if (USE_BACKEND) {
     try {

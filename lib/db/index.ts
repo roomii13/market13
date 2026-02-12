@@ -39,10 +39,10 @@ async function seedDatabase() {
       id: '1',
       email: 'admin@pampapro.com',
       password: await hashPassword('123456'), // Implementar hash después
-      nombre: 'Carlos',
-      apellido: 'Administrador',
+      nombre: 'Romina',
+      apellido: 'Administradora',
       rol: 'admin',
-      telefono: '+54 11 1234-5678',
+      telefono: '+54 2954 446198',
       verificado: true,
       facial_verificado: true
     },
